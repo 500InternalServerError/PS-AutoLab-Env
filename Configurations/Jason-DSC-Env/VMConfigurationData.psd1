@@ -175,6 +175,7 @@ demonstrations and would need to be modified for your environment.
             CustomBootStrap = @'
                     # To enable PSRemoting on the client
                     Enable-PSRemoting -SkipNetworkProfileCheck -Force;
+                    Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value *
 '@
         }
 
